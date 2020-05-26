@@ -25,3 +25,12 @@ QA や、お客さん確認など、開発者以外の方用
 1. **Reviewers** が **approved** する
 1. プルリクエストをマージする
 1. `feature/first` ブランチを delete する
+
+```
+*   d87f0c9 (origin/develop) Merge pull request #1 from hisasann/feature/first
+|\
+| * 361dd3f (origin/feature/first, feature/first) first commit to feature/first
+|/
+* a34f262 (origin/staging, origin/production, staging, production) first commit
+```
+
