@@ -1,6 +1,6 @@
-# git-staging-flow
+# 🥭 git-staging-flow
 
-## メインとなるブランチたち
+## 🍗 メインとなるブランチたち
 
 ### develop
 
@@ -14,7 +14,17 @@ QA や、お客さん確認など、開発者以外の方用
 
 本番用
 
-## 開発をするときのフロー - develop ブランチ
+## 🍜 作っては削除されるブランチたち
+
+### feature/*
+
+新機能の実装用
+
+### hotfix/*
+
+本番でバグがあった場合に `production` ブランチから作成されます
+
+## 🥘 開発をするときのフロー - develop ブランチ
 
 1. `develop` ブランチから `feature/first` ブランチを作成する
 1. `feature/first` で作業をし **commit** する
@@ -34,7 +44,7 @@ QA や、お客さん確認など、開発者以外の方用
 * a34f262 (origin/staging, origin/production, staging, production) first commit
 ```
 
-## QA やお客さん確認のためのフロー - staging ブランチ
+## 🥧 QA やお客さん確認のためのフロー - staging ブランチ
 
 1. github 上で **New pull request** をクリックする
 1. base: `staging` ブランチ <- `develop` ブランチを選択する
@@ -43,12 +53,3 @@ QA や、お客さん確認など、開発者以外の方用
 1. **Merge pull request** をクリックする
 1. **Confirm merge** をクリックする
 1. [Branches](https://github.com/hisasann/git-staging-flow/settings/branches) で `develop`, `staging` ブランチを保護しているのでブランチの削除はできません
-
-
-
-
-
-
-
-
-
