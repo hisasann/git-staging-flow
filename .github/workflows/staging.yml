@@ -1,0 +1,13 @@
+name: deploy-stg
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  build:
+    name: Hello World
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Hello, World! ${GITHUB_REF#refs/heads/} ${GITHUB_REF##*/}
