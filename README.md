@@ -54,3 +54,15 @@ QA や、お客さん確認など、開発者以外の方用
 1. **Merge pull request** をクリックする
 1. **Confirm merge** をクリックする
 1. [Branches](https://github.com/hisasann/git-staging-flow/settings/branches) で `develop`, `staging` ブランチを保護しているのでブランチの削除はできません
+
+## 🍝 本番へのデプロイフロー - production ブランチ
+
+1. github 上で **New pull request** をクリックする
+1. base: `production` ブランチ <- `staging` ブランチを選択する
+1. タイトルやコメントを書く
+1. **Create pull request** をクリックする
+    * into `production` from `staging`
+1. **Merge pull request** をクリックする
+1. **Confirm merge** をクリックする
+1. [Branches](https://github.com/hisasann/git-staging-flow/settings/branches) で `develop`, `staging` ブランチを保護しているのでブランチの削除はできません
+1. github 上でリリース作業を行う
