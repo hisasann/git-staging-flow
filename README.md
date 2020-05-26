@@ -34,6 +34,7 @@ QA や、お客さん確認など、開発者以外の方用
 1. プルリクエストのレビューを **Reviewers** から受ける
 1. **Reviewers** が **approved** する
 1. プルリクエストをマージする
+1. ここで **デプロイ** がされるイメージ
 1. `feature/first` ブランチを delete する
 
 ```
@@ -53,6 +54,7 @@ QA や、お客さん確認など、開発者以外の方用
     * into `staging` from `develop`
 1. **Merge pull request** をクリックする
 1. **Confirm merge** をクリックする
+1. ここで **デプロイ** がされるイメージ
 1. [Branches](https://github.com/hisasann/git-staging-flow/settings/branches) で `develop`, `staging` ブランチを保護しているのでブランチの削除はできません
 
 ## 🍝 本番へのデプロイフロー - production ブランチ
@@ -65,4 +67,5 @@ QA や、お客さん確認など、開発者以外の方用
 1. **Merge pull request** をクリックする
 1. **Confirm merge** をクリックする
 1. [Branches](https://github.com/hisasann/git-staging-flow/settings/branches) で `develop`, `staging` ブランチを保護しているのでブランチの削除はできません
-1. github 上でリリース作業を行う
+1. ここで **デプロイ** がされるイメージ
+1. リリースされたバージョンを github 上でリリース作業を行う
