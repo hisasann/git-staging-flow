@@ -135,4 +135,5 @@ production ブランチ -> develop-* ブランチ -> hotfix ブランチ -> deve
 1. プルリクエストをマージする
 1. ここで `develop-hotfix-XXX` ブランチが **再度デプロイ** されるイメージ
 1. `hotfix/first` ブランチを delete する
-1. ここから先は [QA やお客さん確認のためのフロー](https://github.com/hisasann/git-staging-flow#-qa-%E3%82%84%E3%81%8A%E5%AE%A2%E3%81%95%E3%82%93%E7%A2%BA%E8%AA%8D%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%95%E3%83%AD%E3%83%BC) を参照
+1. ここまできたら QA する [QA やお客さん確認のためのフロー](https://github.com/hisasann/git-staging-flow#-qa-%E3%82%84%E3%81%8A%E5%AE%A2%E3%81%95%E3%82%93%E7%A2%BA%E8%AA%8D%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%95%E3%83%AD%E3%83%BC) を参照
+1. QA が通ったら本番へ [本番へのデプロイフロー](https://github.com/hisasann/git-staging-flow#-%E6%9C%AC%E7%95%AA%E3%81%B8%E3%81%AE%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%83%95%E3%83%AD%E3%83%BC)
