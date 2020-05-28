@@ -113,19 +113,19 @@ develop ブランチ -> fix ブランチ -> develop ブランチ -> staging ブ�
 
 ## 🍖 本番でバグが発生したので直す
 
-production ブランチ -> develop/* ブランチ -> hotfix ブランチ -> develop/* ブランチ -> staging/* ブランチ -> production ブランチ
+production ブランチ -> develop-* ブランチ -> hotfix ブランチ -> develop-* ブランチ -> staging-* ブランチ -> production ブランチ
 
 1. github で **issue** を作成する
-1. `production` ブランチから `develop/hotfix-XXX` ブランチを作成する
-1. ローカルの `develop/hotfix-XXX` ブランチを、リモートに **push** する
-1. ここで `develop/hotfix-XXX` ブランチが **デプロイ** されるイメージ
+1. `production` ブランチから `develop-hotfix-XXX` ブランチを作成する
+1. ローカルの `develop-hotfix-XXX` ブランチを、リモートに **push** する
+1. ここで `develop-hotfix-XXX` ブランチが **デプロイ** されるイメージ
 
-`develop/hotfix-XXX` ブランチとしてるのは、 `develop` ブランチがすでに新規開発で **commit** が進んでいると想定した場合の命名です
+`develop-hotfix-XXX` ブランチとしてるのは、 `develop` ブランチがすでに新規開発で **commit** が進んでいると想定した場合の命名です
 
-一時的に `develop` サーバーは、 `develop/hotfix-XXX` ブランチがデプロイされる想定です
+一時的に `develop` サーバーは、 `develop-hotfix-XXX` ブランチがデプロイされる想定です
 
 1. `develop` サーバーで本番のバグが発生するかを確認する
-1. 再現した場合、 `develop/hotfix-XXX` ブランチから `hotfix/first` ブランチを作成する
+1. 再現した場合、 `develop-hotfix-XXX` ブランチから `hotfix/first` ブランチを作成する
 1. `hotfix/first` で作業をし **commit** する
 1. 作業が完了したらローカルの `hotfix/first` ブランチを、リモートに **push** する
 1. github.com のリポジトリページに行きプルリクエストを作成する
@@ -133,6 +133,6 @@ production ブランチ -> develop/* ブランチ -> hotfix ブランチ -> deve
 1. プルリクエストのレビューを **Reviewers** から受ける
 1. **Reviewers** が **approved** する
 1. プルリクエストをマージする
-1. ここで `develop/hotfix-XXX` ブランチが **再度デプロイ** されるイメージ
+1. ここで `develop-hotfix-XXX` ブランチが **再度デプロイ** されるイメージ
 1. `hotfix/first` ブランチを delete する
 1. ここから先は [QA やお客さん確認のためのフロー](https://github.com/hisasann/git-staging-flow#-qa-%E3%82%84%E3%81%8A%E5%AE%A2%E3%81%95%E3%82%93%E7%A2%BA%E8%AA%8D%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%95%E3%83%AD%E3%83%BC) を参照
