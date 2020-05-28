@@ -129,7 +129,7 @@ production ブランチ -> develop-* ブランチ -> hotfix ブランチ -> deve
 1. `hotfix/first` で作業をし **commit** する
 1. 作業が完了したらローカルの `hotfix/first` ブランチを、リモートに **push** する
 1. github.com のリポジトリページに行きプルリクエストを作成する
-    * into `develop/hotfix-XXX` from `hotfix/first`
+    * into `develop-hotfix-XXX` from `hotfix/first`
 1. プルリクエストのレビューを **Reviewers** から受ける
 1. **Reviewers** が **approved** する
 1. プルリクエストをマージする
